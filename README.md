@@ -1,5 +1,6 @@
 # web-automation
 
+This project is for demonstration purposes only.
 Admin 웹 페이지의 작업자 관리 기능을 Playwright로 자동화한 QA 프로젝트입니다.
 
 > 본 프로젝트는 사내 시스템을 대상으로 작성되었습니다.  
@@ -73,5 +74,21 @@ MudBlazor 기반 UI 특성상 동적으로 생성되는 `_bl_` 속성과 `mudinp
 **Allure 리포트 연동**  
 테스트 결과를 시각적인 HTML 리포트로 확인할 수 있습니다.
 
+---
 
+## 실행 방법
 
+```bash
+# 패키지 설치
+npm install
+npx playwright install chromium
+
+# .env 파일 설정 (.env.example 참고)
+
+# 테스트 실행
+npm test
+
+# Allure 리포트 확인
+allure generate allure-results --clean
+allure open
+```
