@@ -1,7 +1,5 @@
 # web-automation
 
-# web-automation
-
 Playwright 기반의 Admin 웹 QA 자동화 프로젝트입니다.
 
 This project is for demonstration purposes only.
