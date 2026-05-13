@@ -1,11 +1,13 @@
 # web-automation
 
+# web-automation
+
+Playwright 기반의 Admin 웹 QA 자동화 프로젝트입니다.
+
 This project is for demonstration purposes only.
-Admin 웹 페이지의 작업자 관리 기능을 Playwright로 자동화한 QA 프로젝트입니다.
 
 > 본 프로젝트는 사내 시스템을 대상으로 작성되었습니다.  
 > 실제 실행은 사내 네트워크 환경에서만 동작하며, 접속 정보는 공개하지 않습니다.
-
 ---
 
 ## 기술 스택
