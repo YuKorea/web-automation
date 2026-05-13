@@ -12,7 +12,7 @@ This project is for demonstration purposes only.
 
 | 항목 | 내용 |
 |------|------|
-| 언어 | JavaScript (Node.js) |
+| 언어 | TypeScript (Node.js) |
 | 프레임워크 | Playwright |
 | 리포트 | Allure |
 | 패턴 | Page Object Model |
@@ -25,11 +25,11 @@ This project is for demonstration purposes only.
 web-automation/
 ├── playwright.config.ts
 ├── package.json
-├── .env.example               # 환경변수 형식 (실제 값 제외)
+├── .env.example               # 환경변수 형식 
 └── tests/
     ├── pages/
-    │   ├── login.page.ts      # 로그인 페이지 locator / 액션
-    │   └── worker.page.ts     # 작업자 관리 페이지 locator / 액션
+    │   ├── login.page.ts      # 로그인 페이지 
+    │   └── worker.page.ts     # 작업자 관리 페이지 
     ├── specs/
     │   └── worker-crud.spec.ts  # 작업자 CRUD 테스트
     └── fixtures/
@@ -63,7 +63,7 @@ web-automation/
 페이지별로 locator와 액션을 분리해 테스트 코드의 재사용성과 유지보수성을 높였습니다.
 
 **안정적인 Locator 전략**  
-MudBlazor 기반 UI 특성상 동적으로 생성되는 `_bl_` 속성과 `mudinput-*` id를 사용하지 않고, `role`, `type`, `class` 기반 locator를 사용했습니다.
+Component-based UI framework 특성상 동적으로 생성되는 `_bl_` 속성과 `mudinput-*` id를 사용하지 않고, `role`, `type`, `class` 기반 locator를 사용했습니다.
 
 **환경변수 분리**  
 접속 URL, 계정 정보 등 민감한 정보는 `.env` 파일로 분리해 코드에 직접 노출되지 않도록 했습니다.
@@ -76,19 +76,8 @@ MudBlazor 기반 UI 특성상 동적으로 생성되는 `_bl_` 속성과 `mudinp
 
 ---
 
-## 실행 방법
+## Notes
 
-```bash
-# 패키지 설치
-npm install
-npx playwright install chromium
+This repository is intended for portfolio and demonstration purposes only.
 
-# .env 파일 설정 (.env.example 참고)
-
-# 테스트 실행
-npm test
-
-# Allure 리포트 확인
-allure generate allure-results --clean
-allure open
-```
+Actual execution requires access to the internal environment and credentials, which are not publicly available.
