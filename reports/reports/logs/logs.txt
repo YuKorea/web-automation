@@ -1,0 +1,21 @@
+npm test
+
+> web-automation@1.0.0 test
+> playwright test
+
+
+Running 10 tests using 1 worker
+
+  ✓   1 [chromium] › tests\specs\worker-crud.spec.ts:26:3 › 작업자 관리 CRUD › 작업자 생성 — 팝업 열기 (3.9s)
+  ✓   2 [chromium] › tests\specs\worker-crud.spec.ts:34:3 › 작업자 관리 CRUD › 작업자 생성 — 취소 버튼 (3.9s)
+  ✓   3 [chromium] › tests\specs\worker-crud.spec.ts:41:3 › 작업자 관리 CRUD › 작업자 생성 — 성공 (4.6s)
+✅ 생성된 작업자 ID: qa_1778661033315
+  ✓   4 [chromium] › tests\specs\worker-crud.spec.ts:50:3 › 작업자 관리 CRUD › 작업자 생성 — 아이디 필수값 검증 (3.8s)
+  ✓   5 [chromium] › tests\specs\worker-crud.spec.ts:57:3 › 작업자 관리 CRUD › 작업자 검색 — 존재하는 키워드 (4.2s)
+  ✓   6 [chromium] › tests\specs\worker-crud.spec.ts:63:3 › 작업자 관리 CRUD › 작업자 검색 — 없는 키워드 (4.2s)
+  ✓   7 [chromium] › tests\specs\worker-crud.spec.ts:69:3 › 작업자 관리 CRUD › 작업자 검색 — 초기화 (4.7s)
+  ✓   8 [chromium] › tests\specs\worker-crud.spec.ts:76:3 › 작업자 관리 CRUD › 작업자 수정 — 팝업 열림 확인 (3.9s)
+  ✓   9 [chromium] › tests\specs\worker-crud.spec.ts:83:3 › 작업자 관리 CRUD › 작업자 삭제 — 생성된 작업자 삭제 (5.9s)
+  ✓  10 [chromium] › tests\specs\worker-crud.spec.ts:97:3 › 작업자 관리 CRUD › 승인상태 — yukorea 승인완료 확인 (3.9s)
+
+  10 passed (43.7s)
