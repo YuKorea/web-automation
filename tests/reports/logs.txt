@@ -1,21 +1,37 @@
-npm test
-
-> web-automation@1.0.0 test
+web-automation@1.0.0 test
 > playwright test
 
 
-Running 10 tests using 1 worker
+Running 24 tests using 3 workers
 
-  ✓   1 [chromium] › tests\specs\worker-crud.spec.ts:26:3 › 작업자 관리 CRUD › 작업자 생성 — 팝업 열기 (3.9s)
-  ✓   2 [chromium] › tests\specs\worker-crud.spec.ts:34:3 › 작업자 관리 CRUD › 작업자 생성 — 취소 버튼 (3.9s)
-  ✓   3 [chromium] › tests\specs\worker-crud.spec.ts:41:3 › 작업자 관리 CRUD › 작업자 생성 — 성공 (4.6s)
-✅ 생성된 작업자 ID: qa_1778661033315
-  ✓   4 [chromium] › tests\specs\worker-crud.spec.ts:50:3 › 작업자 관리 CRUD › 작업자 생성 — 아이디 필수값 검증 (3.8s)
-  ✓   5 [chromium] › tests\specs\worker-crud.spec.ts:57:3 › 작업자 관리 CRUD › 작업자 검색 — 존재하는 키워드 (4.2s)
-  ✓   6 [chromium] › tests\specs\worker-crud.spec.ts:63:3 › 작업자 관리 CRUD › 작업자 검색 — 없는 키워드 (4.2s)
-  ✓   7 [chromium] › tests\specs\worker-crud.spec.ts:69:3 › 작업자 관리 CRUD › 작업자 검색 — 초기화 (4.7s)
-  ✓   8 [chromium] › tests\specs\worker-crud.spec.ts:76:3 › 작업자 관리 CRUD › 작업자 수정 — 팝업 열림 확인 (3.9s)
-  ✓   9 [chromium] › tests\specs\worker-crud.spec.ts:83:3 › 작업자 관리 CRUD › 작업자 삭제 — 생성된 작업자 삭제 (5.9s)
-  ✓  10 [chromium] › tests\specs\worker-crud.spec.ts:97:3 › 작업자 관리 CRUD › 승인상태 — yukorea 승인완료 확인 (3.9s)
+  ✓   1 [chromium] › tests\specs\group-crud.spec.ts:19:3 › 그룹 관리 CRUD › 그룹 생성 — 팝업 열기 (4.0s)
+  ✓   2 …hromium] › tests\specs\commoncode-crud.spec.ts:23:3 › 공통코드 관리 CRUD › 공통코드 생성 — 팝업 열기 (4.0s)
+  ✓   3 [chromium] › tests\specs\worker-crud.spec.ts:26:3 › 작업자 관리 CRUD › 작업자 생성 — 팝업 열기 (3.9s)
+  ✓   4 [chromium] › tests\specs\worker-crud.spec.ts:34:3 › 작업자 관리 CRUD › 작업자 생성 — 취소 버튼 (3.9s)
+  ✓   5 …hromium] › tests\specs\commoncode-crud.spec.ts:33:3 › 공통코드 관리 CRUD › 공통코드 생성 — 취소 버튼 (4.0s)
+  ✓   6 [chromium] › tests\specs\group-crud.spec.ts:28:3 › 그룹 관리 CRUD › 그룹 생성 — 취소 버튼 (4.0s)
+  ✓   7 [chromium] › tests\specs\worker-crud.spec.ts:41:3 › 작업자 관리 CRUD › 작업자 생성 — 성공 (4.7s)
+  ✓   8 [chromium] › tests\specs\commoncode-crud.spec.ts:40:3 › 공통코드 관리 CRUD › 공통코드 생성 — 성공 (4.0s)
+  ✓   9 [chromium] › tests\specs\group-crud.spec.ts:35:3 › 그룹 관리 CRUD › 그룹 생성 — 성공 (5.7s)
+✅ 생성된 코드: qa7657
+  ✓  10 …] › tests\specs\commoncode-crud.spec.ts:52:3 › 공통코드 관리 CRUD › 공통코드 생성 — 코드 필수값 검증 (3.9s)
+✅ 생성된 작업자 ID: qa_1778723885885
+  ✓  11 …romium] › tests\specs\worker-crud.spec.ts:50:3 › 작업자 관리 CRUD › 작업자 생성 — 아이디 필수값 검증 (3.9s)
+✅ 생성된 그룹명: qa_group_5cna3
+  ✓  12 [chromium] › tests\specs\group-crud.spec.ts:50:3 › 그룹 관리 CRUD › 그룹 생성 — 그룹명 필수값 검증 (3.8s)
+  ✓  13 …m] › tests\specs\commoncode-crud.spec.ts:60:3 › 공통코드 관리 CRUD › 공통코드 검색 — 존재하는 키워드 (4.2s)
+  ✓  14 [chromium] › tests\specs\worker-crud.spec.ts:57:3 › 작업자 관리 CRUD › 작업자 검색 — 존재하는 키워드 (4.2s)
+  ✓  15 [chromium] › tests\specs\group-crud.spec.ts:58:3 › 그룹 관리 CRUD › 그룹 검색 — 존재하는 키워드 (4.2s)
+  ✓  16 …omium] › tests\specs\commoncode-crud.spec.ts:67:3 › 공통코드 관리 CRUD › 공통코드 검색 — 없는 키워드 (4.2s)
+  ✓  17 [chromium] › tests\specs\worker-crud.spec.ts:63:3 › 작업자 관리 CRUD › 작업자 검색 — 없는 키워드 (4.2s)
+  ✓  18 [chromium] › tests\specs\group-crud.spec.ts:66:3 › 그룹 관리 CRUD › 그룹 검색 — 없는 키워드 (4.3s)
+  ✓  19 …] › tests\specs\commoncode-crud.spec.ts:75:3 › 공통코드 관리 CRUD › 공통코드 삭제 — 생성된 코드 삭제 (5.8s)
+  ✓  20 [chromium] › tests\specs\worker-crud.spec.ts:69:3 › 작업자 관리 CRUD › 작업자 검색 — 초기화 (4.7s)
+  ✓  21 [chromium] › tests\specs\group-crud.spec.ts:74:3 › 그룹 관리 CRUD › 그룹 삭제 — 생성된 그룹 삭제 (5.8s)
+  ✓  22 [chromium] › tests\specs\worker-crud.spec.ts:76:3 › 작업자 관리 CRUD › 작업자 수정 — 팝업 열림 확인 (3.8s)
+✅ 삭제 확인: qa7657
+✅ 삭제 확인: qa_group_5cna3
+  ✓  23 …romium] › tests\specs\worker-crud.spec.ts:83:3 › 작업자 관리 CRUD › 작업자 삭제 — 생성된 작업자 삭제 (4.4s)
+  ✓  24 …romium] › tests\specs\worker-crud.spec.ts:97:3 › 작업자 관리 CRUD › 승인상태 — yukorea 승인완료 확인 (3.7s)
 
-  10 passed (43.7s)
+  24 passed (41.9s)
