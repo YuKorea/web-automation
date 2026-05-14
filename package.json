@@ -1,0 +1,14 @@
+{
+  "name": "ergrin-web-automation",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "playwright test",
+    "test:worker": "playwright test worker-crud",
+    "test:headed": "playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "allure-playwright": "^3.0.0",
+    "dotenv": "^16.0.0"
+  }
+}
