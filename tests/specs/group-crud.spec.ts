@@ -35,8 +35,8 @@ test.describe('그룹 관리 CRUD', () => {
     const data = {
       name: randomStr('qa_group'),
       description: randomStr('qa_desc'),
-      manager: 'CSLEE01',
-      worker: 'CSLEE01',
+      manager: 'yukorea',
+      worker: 'yukorea',
     };
     await groupPage.createGroup(data);
     await expect(groupPage.table.getByRole('row').filter({ hasText: data.name })).toHaveCount(1);
@@ -53,9 +53,9 @@ test.describe('그룹 관리 CRUD', () => {
 
   test('그룹 검색 — 존재하는 키워드', async ({ page }) => {
     const groupPage = new GroupPage(page);
-    await groupPage.searchInput.fill('CSLEE');
+    await groupPage.searchInput.fill('yukorea');
     await page.waitForTimeout(500);
-    await expect(groupPage.table.getByRole('row').filter({ hasText: 'CSLEE' }).first()).toBeVisible();
+    await expect(groupPage.table.getByRole('row').filter({ hasText: 'yukorea' }).first()).toBeVisible();
   });
 
   test('그룹 검색 — 없는 키워드', async ({ page }) => {

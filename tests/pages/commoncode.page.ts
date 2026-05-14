@@ -5,8 +5,6 @@ class CommonCodePage {
     this.searchInput        = page.getByRole('textbox').first();
     this.table              = page.getByRole('table');
     this.popup              = page.getByRole('dialog');
-    // :not([readonly]) — 상위코드 필드는 readonly라 제외
-    // nth(0) 코드, nth(2) 이름 (nth(1)은 hidden input)
     this.popupCode          = this.popup.locator('input[type="text"]:not([readonly])').nth(0);
     this.popupName          = this.popup.locator('input[type="text"]:not([readonly])').nth(2);
     this.popupConfirmButton = this.popup.getByRole('button', { name: '확인' });
